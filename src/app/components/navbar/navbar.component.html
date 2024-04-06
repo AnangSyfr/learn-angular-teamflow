@@ -1,0 +1,43 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <div class="navbar-brand">
+      <svg
+        width="35"
+        height="35"
+        viewBox="0 0 35 35"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="17.5" cy="17.5" r="17.5" fill="#FFCA1D" />
+        <path
+          d="M24.3499 8.80881L21.035 20.7463L9.6218 25.5662L12.9367 13.6287L24.3499 8.80881Z"
+          fill="white"
+        />
+      </svg>
+      <h1>TeamFlow</h1>
+    </div>
+    <div class="navbar-menu-icon">
+      <img
+        src="./assets/images/hamburger.svg"
+        alt="menu icon"
+        (click)="toggleNav()"
+      />
+    </div>
+  </div>
+  <div
+    [classList]="openNav() ? 'navbar-right navbar-right--open' : 'navbar-right'"
+  >
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="">Product</a></li>
+        <li><a href="">Solution</a></li>
+        <li><a href="">Enterprise</a></li>
+        <li><a href="">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="navbar-button-wrapper flex">
+      <button class="btn btn-login">Login</button>
+      <button class="btn btn-sign-up">Sign Up</button>
+    </div>
+  </div>
+</div>

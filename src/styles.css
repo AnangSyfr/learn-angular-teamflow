@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 24px;
+    background: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.line {
+    height: 10px;
+    background: #3ADAD9;
+    border-radius: 10px;
+    width: 65px;
+}
